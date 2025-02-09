@@ -1,7 +1,7 @@
 # OxfordETH
 Repository for Oxford Hackathon
 
-Welcome! We're a team of 3 hackers, 2 of which are focused on UI, presentation, research and ptiching and 1 of which is focused on software development.
+Welcome! We're a team of 3 hackers, 2 of which are focused on UI, presentation, research and ptiching (1 of which is an active researcher into business development) and 1 of which is focused on software development.
 
 We came up with the idea to create a tennis / racquet sport booking system leveraging flare's blockchain potential.
 
