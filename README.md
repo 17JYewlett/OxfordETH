@@ -27,20 +27,7 @@ Our team formation didn't happen until late Saturday morning due to an issue of 
 *
 By the time we had finished finalising our plans and direction, we didn't start the main parts of development until early Saturday afternoon.
 *
-This project is still largely under development due to time constraints and a team refactoring situation that was beyond our control, so please look at our pitch presentation and direction as where we may have gone further if weren't to have said constraints.
-*
-In order to mitigate as much as this as possible,
-**
-We, reused elements of code from my previous team formation the night before.
-**
-Used tools such as telegram and OneNote to plan and organise ourselves.
-**
-Gave certain API key finding research to certain members and got them to explore different things we could do.
-**
-Removed unrealistic elements, especially design-wise
-
-****
-***
+We instead decided to leverage most of the power of the skills in our group which involved a more business / ui planning approach. This was the only realistic path we could take due to the constraint of having one developer.
 **
 *
 Thank you for reading our README, please let us know what you think by sending an email to: ethoxford2025groupjaa@gmail.com with any feedback you have!
