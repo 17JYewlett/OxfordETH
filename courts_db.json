@@ -1,0 +1,29 @@
+{
+    "court1":{
+        "court name": "Oxford University Tennis Courts",
+        "available courts": 6,
+        "current bookings": {},
+        "postcode": "OX1 5AA"
+    },
+    "court2": {
+        "court name": "Cambridge University Badminton Courts",
+        "available courts": 8,
+        "current bookings": {
+            "0x1962F05e302bf1FbCf45fa0E5769f361E6b7284A": "1100-25-02-2025",
+            "0x1861D95e202bd1f45fa0EF313769fd361E6c7284": "1500-21-02-2025"
+        },
+        "postcode": "CB5 8AQ"
+    },
+    "court3" : {
+        "court name": "Loughborough University Dan Maskell Tennis Centre",
+        "available courts": 8,
+        "current bookings": {
+            "0x1962F05e302bf1FbCf45fa0E5769f361E6b7284A": "0900-19-02-2025",
+            "0x1861D95e202bd1f45fa0EF313769fd361E6c7284": "0900-19-02-2025",
+            "0x7659350b4c58d971b0ebccb6ee6fb2939a710673": "0900-19-02-2025",
+            "0x9b0226b1a8eaaa11549f6604904da26532d20ad2": "0900-19-02-2025",
+            "0x0x693498f116fa8e3d322f51ea889907d2748252": "1400-26-02-2025"
+        },
+        "postcode": "LE11 3TU"
+    }
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sportflare - Booking</title>
+    <link rel="stylesheet" href="styles_global.css">
+    <script defer src="new_booking_scripts.js"></script>
+</head>
+<body>
+    <!-- 🔹 Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">Sportflare 🚀🔥</div>
+        <ul class="nav-links">
+            <li><a href="main.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="login.html" class="login-btn">Login</a></li>
+        </ul>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+    </nav>
+    
+    <!-- 🔹 Booking Page Content -->
+    <div class="booking-container">
+        <div class="booking-box">
+            <h1>Welcome, Joe!</h1>
+            <p>Please enter your postcode to see what's available near you!</p>
+        <form id="postcode">
+            <div class="input-group">
+
+                <input type="text" id="firstName" placeholder="Enter your postcode" required>
+                <div id="nearest-courts"></div>
+            </div>
+        </form>
+            
+            <button class="book-btn" onclick="window.location.href='new_booking.html'">Make a new booking</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sportflare - Booking</title>
+    <link rel="stylesheet" href="styles_global.css">
+    <script defer src="scripts.js"></script>
+</head>
+<body>
+    <!-- 🔹 Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">Sportflare 🚀🔥</div>
+        <ul class="nav-links">
+            <li><a href="main.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="login.html" class="login-btn">Login</a></li>
+        </ul>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+    </nav>
+    
+    <!-- 🔹 Booking Page Content -->
+    <div class="booking-container">
+        <div class="booking-box">
+            <h1>Welcome, Joe!</h1>
+            <p>Courts previously booked:</p>
+            
+            <div class="booking-list">
+                <div class="court">
+                    <img src="court1.jpg" alt="Raleigh Field">
+                    <p>Raleigh Field, 0.5 miles</p>
+                </div>
+                <div class="court">
+                    <img src="court2.jpg" alt="Vidoli Field">
+                    <p>Vidoli Field, 0.6 miles</p>
+                </div>
+                <div class="court">
+                    <img src="court3.jpg" alt="Tarbaru Field">
+                    <p>Tarbaru Field, 0.7 miles</p>
+                </div>
+                <div class="court">
+                    <img src="court4.jpg" alt="Pansyvan Field">
+                    <p>Pansyvan Field, 0.8 miles</p>
+                </div>
+                <div class="court">
+                    <img src="court5.jpg" alt="Riyuan Field">
+                    <p>Riyuan Field, 0.9 miles</p>
+                </div>
+            </div>
+            
+            <button class="book-btn" onclick="window.location.href='new_booking.html'">Make a new booking</button>
+        </div>
+    </div>
+</body>
+</html>

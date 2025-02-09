@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sportflare Map Integration</title>
+    <link rel="stylesheet" href="styles_maps.css">
+    <script defer src="scripts_maps.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YAIzaSyBBEmOS2cnLUK9NkEvq4qk4LB9IgN5luoE&libraries=places&callback=initMap" async defer></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Sportflare 🚀🔥</div>
+        <ul class="nav-links">
+            <li><a href="main.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="login.html" class="login-btn">Login</a></li>
+        </ul>
+    </nav>
+
+    <div class="map-container">
+        <h1>Welcome, Joe!</h1>
+        <div class="map-box">
+            <input id="searchBox" type="text" placeholder="Search for location...">
+            <div id="map"></div>
+            <button class="book-btn">Book Court</button>
+        </div>
+    </div>
+
+</body>
+</html>

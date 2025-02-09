@@ -1,0 +1,35 @@
+{
+    "coach1": {
+        "name": "Andy Murray",
+        "age": 37,
+        "gender": "Male",
+        "location": "SW19 3NY",
+        "standard-availability": {
+            "Monday": "0900-1200,1400-1600",
+            "Tuesday": "0800-1100,1400-1600,1900-2100"
+        },
+        "price-cflr": 3.5
+    },
+    "coach2": {
+        "name": "Serena Williams",
+        "age": 43,
+        "gender": "Female",
+        "location": "S6 6FG",
+        "standard-availability": {
+            "Thursday": "0900-1200,1400-1600",
+            "Saturday": "0800-1100,1400-1600,1900-2100"
+        },
+        "price-cflr": 3.9
+    },
+    "coach3": {
+        "name": "Chris Adcock",
+        "age": 35,
+        "gender": "Male",
+        "location": "LE4 0PX",
+        "standard-availability": {
+            "Tuesday": "0900-1200,1400-1600",
+            "Friday": "0800-1100,1400-1600,1900-2000"
+        },
+        "price-cflr": 4.25
+    }
+}

@@ -1,0 +1,545 @@
+/* 🔹 Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 🔹 Import Google Fonts - Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* 🔹 Full-Screen Background */
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: url('background-image.jpg') no-repeat center center/cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+/* 🔹 Background Overlay */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* Dark overlay for better text visibility */
+    z-index: -1;
+}
+
+/* 🔹 Racket Swing Transition Animation */
+.page-transition {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('racket-swing.png') no-repeat center center/cover;
+    transform: translateX(-100%);
+    z-index: 2000;
+    transition: transform 0.8s ease-in-out;
+}
+
+/* 🔹 Show the animation */
+.show-transition {
+    transform: translateX(0);
+}
+
+/* 🔹 Fully Styled Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    padding: 15px 30px;
+    color: white;
+    font-size: 18px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* 🔹 Navbar Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+    padding: 8px 14px;
+    position: relative;
+}
+
+.nav-links a:hover {
+    color: #ffdd57;
+}
+
+/* 🔹 Enlarged Landing Page Box */
+.landing-container {
+    text-align: center;
+    color: white;
+    animation: fadeIn 1s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* 🔹 Larger Landing Box Covering Most of the Screen */
+.landing-box {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    padding: 60px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    max-width: 70%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+/* 🔹 Increased Size of Heading & Moved It Higher */
+.landing-box h1 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    margin-top: -40px;
+}
+
+/* 🔹 Text Styling */
+.landing-box p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #f0f0f0;
+    margin-bottom: 30px;
+}
+
+/* 🔹 Modern Get Started Button */
+.get-started-btn {
+    background: linear-gradient(135deg, #ffdd57, #ff9900);
+    color: black;
+    padding: 16px 30px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border: none;
+    display: inline-block;
+}
+
+.get-started-btn:hover {
+    background: linear-gradient(135deg, #ff9900, #ffdd57);
+    transform: scale(1.05);
+}
+
+.logo {
+    font-size: xxlarge;
+}
+
+/* 🔹 Login Box */
+.login-container {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    text-align: center;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* 🔹 Login Box Heading */
+.login-container h2 {
+    font-size: 26px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* 🔹 Input Field Styling */
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: white;
+}
+
+/* 🔹 Styled Input Fields */
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 6px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    outline: none;
+}
+
+/* 🔹 Input Placeholder Styling */
+.input-group input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* 🔹 Login Button */
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #ffdd57, #ff9900);
+    color: black;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #ff9900, #ffdd57);
+    transform: scale(1.05);
+}
+
+/* 🔹 Signup Text */
+.signup-text {
+    margin-top: 15px;
+    font-size: 14px;
+    color: white;
+}
+
+.signup-text a {
+    color: #ffdd57;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-text a:hover {
+    text-decoration: underline;
+}
+
+/* 🔹 Fade-in Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* 🔹 Responsive Design */
+@media (max-width: 768px) {
+    .landing-box {
+        width: 85%;
+        height: 70%;
+        padding: 40px;
+    }
+
+    .landing-box h1 {
+        font-size: 36px;
+    }
+
+    .navbar {
+        padding: 12px 20px;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+}
+
+/* 🔹 Back Button Styling */
+.back-button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.back-button:hover {
+    background: rgba(255, 255, 255, 0.4);
+    transform: scale(1.05);
+}
+
+/* 🔹 Dropdown Styling */
+.input-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 6px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    outline: none;
+    cursor: pointer;
+    appearance: none;
+    backdrop-filter: blur(10px);
+}
+
+/* 🔹 Dropdown Arrow Styling */
+.input-group select:focus {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* 🔹 Placeholder Text */
+.input-group select option {
+    color: black;
+}
+
+/* 🔹 Dropdown Styling */
+.input-group {
+    position: relative;
+}
+
+.input-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 6px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    outline: none;
+    cursor: pointer;
+    appearance: none;
+    backdrop-filter: blur(10px);
+    position: relative;
+    padding-right: 35px; /* Space for arrow */
+}
+
+/* 🔹 Custom Down Arrow */
+.input-group-drop::after {
+    content: "▼"; /* Down Arrow */
+    font-size: 14px;
+    color: white;
+    position: absolute;
+    right: 12px;
+    top: 70%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+/* 🔹 Dropdown Arrow on Focus */
+.input-group-drop select:focus {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* 🔹 Success Page Styling */
+.success-container {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    text-align: center;
+    animation: fadeIn 0.8s ease-in-out;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.account-icon {
+    width: 80px;
+    margin-bottom: 15px;
+}
+
+/* 🔹 Buttons on Success Page */
+.button-group {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    text-decoration: none;
+    background: linear-gradient(135deg, #ffdd57, #ff9900);
+    color: black;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, #ff9900, #ffdd57);
+    transform: scale(1.05);
+}
+
+.btn-secondary {
+    background: rgba(255, 255, 255, 0.3);
+    color: white;
+}
+
+.btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+/* 🔹 Fade-in Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* 🔹 Booking Page Styling */
+.booking-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: white;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.booking-box {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.booking-box h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.booking-box p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.booking-list {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    overflow-x: auto;
+    padding: 10px;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.5) transparent;
+    justify-content: flex-start;
+    white-space: nowrap;
+}
+
+.booking-list::-webkit-scrollbar {
+    height: 8px;
+}
+
+.booking-list::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+}
+
+.court {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    min-width: 180px;
+    flex: 0 0 auto;
+}
+
+.court img {
+    width: 180px;
+    height: 120px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.court p {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+
+.court:hover {
+    transform: scale(1.05);
+}
+
+.book-btn {
+    background: linear-gradient(135deg, #ffdd57, #ff9900);
+    color: black;
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-top: 20px;
+    border: none;
+}
+
+.book-btn:hover {
+    background: linear-gradient(135deg, #ff9900, #ffdd57);
+    transform: scale(1.05);
+}
+
+.results-container {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 15px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.court-result {
+    padding: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+}
+
+.court-result:last-child {
+    border-bottom: none;
+}
