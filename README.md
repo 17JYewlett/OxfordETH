@@ -36,6 +36,8 @@ We, reused elements of code from my previous team formation the night before.
 Used tools such as telegram and OneNote to plan and organise ourselves.
 **
 Gave certain API key finding research to certain members and got them to explore different things we could do.
+**
+Removed unrealistic elements, especially design-wise
 
 ****
 ***
